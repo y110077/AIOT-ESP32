@@ -1,10 +1,5 @@
 # AIOT ESP32—ESP-IDF Tools安裝及環境建置（Windows）
 
-## 目錄
-#### [ESP32S3 簡介](https://hackmd.io/zI9JMEdBTy2z-ektNHygmA?edit)
-#### >> [ESP-IDF 安裝及環境建置（Win）](https://hackmd.io/tRP9xLiiQpmnTxIsSlCNLw?view)
-#### [人臉辨識（Win）](https://hackmd.io/pgEcdY5JRlq2X1GM3NILmw?view)
-
 ## ESP-IDF Tools安裝及建置步驟
 （以ESP32S3晶片在Windows環境下的設定為例）
 
