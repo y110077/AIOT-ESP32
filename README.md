@@ -25,7 +25,9 @@
 
 6. 終端機輸入指令創建資料夾並進入 
    `<D:\ESPIDF\Espressif\frameworks\esp-idf-v5.2.1\examples\get-started>`
-
+    ```
+    cd D:\ESPIDF\Espressif\frameworks\esp-idf-v5.2.1\examples\get-started
+    ```
 7. 終端機輸入指令將晶片設定為 esp32s3
     ```
     idf.py set-target esp32s3
