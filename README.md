@@ -2,7 +2,7 @@
 
 ## 目錄
 #### >> [ESP-IDF 安裝及環境建置（Hello World）（Win）](https://github.com/yuu1177/AIOT-ESP32/blob/main/README.md)
-#### [復原眼睛辨識（Win）]([https://hackmd.io/pgEcdY5JRlq2X1GM3NILmw?view](https://github.com/yuu1177/AIOT-ESP32-Windows-/blob/main/README.md))
+#### [復原眼睛辨識（Win）](https://github.com/yuu1177/AIOT-ESP32-Windows-/blob/main/README.md)
 
 ## ESP-IDF Tools 安裝及建置步驟
 （以 ESP32S3 晶片在 Windows 環境下的設定為例）
