@@ -1,4 +1,8 @@
-# AIOT ESP32—ESP-IDF Tools安裝及環境建置（Windows）
+# AIOT ESP32—ESP-IDF Tools安裝及環境建置（Hello World）（Windows）
+
+## 目錄
+#### >> [ESP-IDF 安裝及環境建置（Hello World）（Win）](https://github.com/yuu1177/AIOT-ESP32/edit/main/README.md)
+#### [復原眼睛辨識（Win）](https://hackmd.io/pgEcdY5JRlq2X1GM3NILmw?view)
 
 ## ESP-IDF Tools 安裝及建置步驟
 （以 ESP32S3 晶片在 Windows 環境下的設定為例）
@@ -19,7 +23,7 @@
 
 5. 待終端機輸出 ```idf.py build``` 表示環境設置成功
 
-6. 終端機輸入指令 cd 創建資料夾進入 
+6. 終端機輸入指令創建資料夾並進入 
    `<D:\ESPIDF\Espressif\frameworks\esp-idf-v5.2.1\examples\get-started>`
 
 7. 終端機輸入指令將晶片設定為 esp32s3
@@ -34,12 +38,14 @@
 
 9. 進入 menuconfig 圖形配置工具修改 flash 記憶體大小（自訂義）
 
-10. 終端機輸入指令 cd 創建資料夾並進入
-    `<D:\ESPIDF\Espressif\frameworks\Mproject\hello_world>`
+10. 終端機輸入指令創建資料夾並進入
+    `<D:\ESPIDF\Espressif\frameworks\myproject>`
+    ```
+    mkdir myproject
+    cd D:\ESPIDF\Espressif\frameworks\myproject
+    ```
 
-11. 將本機 `<D:\ESPIDF\Espressif\frameworks\esp-idf-v5.2.1\examples\get-started>` 裡的
-     `hello_world` 資料夾複製到新創立的 `Myproject` 資料夾
-     `<D:\ESPIDF\Espressif\frameworks\Mproject>`
+11. 將本機 `<D:\ESPIDF\Espressif\frameworks\esp-idf-v5.2.1\examples\get-started>` 裡的 `hello_world` 資料夾複製到新創立的 `myproject` 資料夾 `<D:\ESPIDF\Espressif\frameworks\myproject>`
 
 12. 終端機輸入指令清除先前配置
     ```
@@ -58,14 +64,14 @@
  
 15. 至裝置管理員查看 ESP32 開發板在電腦接口的名稱 `COM3`
 
-16. 終端機輸入指令下載 hello world 程序到開發板
+16. 終端機輸入指令下載 hello world 程序到開發板（`COM3` 依電腦接口自訂）
     ```
     idf.py -p COM3 flash
     ```
 
-17. 終端機輸入指令監視 hello world 運行狀況
+17. 終端機輸入指令監視 hello world 運行狀況（`COM3` 依電腦接口自訂）
     ```
-    idf.py -p PORT monitor
+    idf.py -p COM3 monitor
     ```
 
 18. 終端機反覆輸出 `"Hello world"` 並開始倒數表示執行成功
@@ -79,7 +85,7 @@
     Restarting in 7 seconds...
     Restarting in 6 seconds...`
     ```
-    ![螢幕擷取畫面—Hello world](https://hackmd.io/_uploads/SJXdf-sNA.png)
+    ![終端機輸出 Hello world](https://hackmd.io/_uploads/SJXdf-sNA.png)
 
 
 19. 按 `Ctrl + C` 跳出
